@@ -17,7 +17,7 @@ parser.add_argument('-v', type=str, help='Video to process', required=True)
 parser.add_argument('-t', type=float, help='Tolerance of face detection, lower is stricter. (0.1-1.0)', default=0.6)
 parser.add_argument('-f', type=int, help='Amount of frames per second to extract.', default=25)
 parser.add_argument('-n', type=int, help='Number of frames with target face to save from each vid.', default=500)
-parser.add_argument('-s', type=int, help='Number of frames with target face to save from each vid.', default=32)
+parser.add_argument('-s', type=int, help='Minimum KB size of images to keep in the faceset.', default=32)
 args = vars(parser.parse_args())
 
 if args['t'] > 1.0:
