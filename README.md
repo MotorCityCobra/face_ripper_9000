@@ -5,7 +5,8 @@ extra quality scanning of the final faceset by removing photos below a minimum s
 face in the photo
 
 # Usage
-python3 demo.py -i '/PATH/TO/PASSPORT/STYLE/PHOTO/OF/TARGET/FACE.jpg' -v '/PATH/TO/DIR/OF/MP4s'
+
+    $python3 demo.py -i '/PATH/TO/PASSPORT/STYLE/PHOTO/OF/TARGET/FACE.jpg' -v '/PATH/TO/DIR/OF/MP4s'
 
 -t = Tolerance of face detection, lower is stricter (0.1-1.0) Default= 0.6
 -f = Amount of frames per second to extract. Default = 25
