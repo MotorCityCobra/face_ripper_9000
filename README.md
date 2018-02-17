@@ -9,7 +9,7 @@ face in the photo
     $python3 demo.py -i '/PATH/TO/PASSPORT/STYLE/PHOTO/OF/TARGET/FACE.jpg' -v '/PATH/TO/DIR/OF/MP4s'
 
     -t = Tolerance of face detection, lower is stricter (0.1-1.0) Default= 0.6
-    -f = Amount of frames per second to extract. Default = 25
+    -f = Amount of frames per second to scan. Default = 25
     -n = Number photos of the face from each video. Default=500 (Set higher if you have less vids)
     -s = Minimum KB size of images to keep in the faceset. Default = 32
 
