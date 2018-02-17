@@ -22,12 +22,12 @@ face_recognition
 
 face_recognition requires a package called dlib. If you have a GPU you must install dlib in a specific way in order to get it to use your GPU ...Which doesn't seem to be listed in the documentation but doing so is as follows,
 
-git clone https://github.com/davisking/dlib.git
+    git clone https://github.com/davisking/dlib.git
 
-cd dlib
+    cd dlib
 
-mkdir build; cd build; cmake .. -DDLIB_USE_CUDA=0 -DUSE_AVX_INSTRUCTIONS=1; cmake --build .
+    mkdir build; cd build; cmake .. -DDLIB_USE_CUDA=0 -DUSE_AVX_INSTRUCTIONS=1; cmake --build .
 
-cd ..
+    cd ..
 
-python3 setup.py install --yes USE_AVX_INSTRUCTIONS --no DLIB_USE_CUDA
+    python3 setup.py install --yes USE_AVX_INSTRUCTIONS --no DLIB_USE_CUDA
