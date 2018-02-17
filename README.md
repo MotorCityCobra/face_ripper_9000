@@ -13,6 +13,8 @@ face in the photo
     -n = Number of frames with target face to save from each video. Default=500
     -s = Minimum KB size of images to keep in the faceset. Default = 32
 
+Running the script creates three files in your directory. One for the faceset. One for the scanned mp4s. One for the small faces.
+
 # Dependancies
 numpy
 
