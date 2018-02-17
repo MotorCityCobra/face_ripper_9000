@@ -20,8 +20,8 @@ duplicates if it stops in the middle of a video. Just go in your faceset folder 
 video when you start it again.
 
 The script can read videos other than mp4s. Just do a find and replace in the script to your extension, like mp4 to mkv.  
-Best to use mp4s ripped from YouTube. Use a third party YouTube video downloader sites or apps to grab dozen(s) of 1080p
-videos starring the target face.
+Best to use mp4s ripped from YouTube. Use YouTube video downloader sites or apps to grab dozen(s) of 1080p videos starring
+the target face.
 
 # Dependancies
 numpy
