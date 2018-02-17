@@ -31,10 +31,7 @@ xfps = args['f']
 targfname = args['i']
 vid_dir = args['v']
 faces_from_each_video = args['n']
-'''
-if xfps < 25:
-	xfps = 25
-'''
+
 if faces_from_each_video < 1:
 	faces_from_each_video = 500
 
