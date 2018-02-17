@@ -10,7 +10,7 @@ face in the photo
 
     -t = Tolerance of face detection, lower is stricter (0.1-1.0) Default= 0.6
     -f = Amount of frames per second to extract. Default = 25
-    -n = Number of frames with target face to save from each video. Default=500 (Set higher if you have less vids)
+    -n = Number photos of the face from each video. Default=500 (Set higher if you have less vids)
     -s = Minimum KB size of images to keep in the faceset. Default = 32
 
 Running the script creates three files in your directory. One for the faceset. One for the scanned mp4s. One for the small faces.
