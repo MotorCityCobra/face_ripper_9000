@@ -15,6 +15,10 @@ face in the photo
 
 Running the script creates three files in your directory. One for the faceset. One for the scanned mp4s. One for the small faces.
 
+The script can read videos other than mp4s. Just do a find and replace in the script to your extension, like mp4 to mkv.  
+Best to use mp4s ripped from YouTube. Use a third party YouTube video downloader sites or apps to grab dozen(s) of 1080p
+videos starring the target face.
+
 # Dependancies
 numpy
 
