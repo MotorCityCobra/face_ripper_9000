@@ -45,7 +45,7 @@ face_recognition requires a package called dlib. If you have a GPU you must inst
 
 
 # Donations Accepted and Appreciated
-If you'd like me to make you more tools for you in the future then share your crypto gains with me.
+If you'd like me to make more tools for you in the future then share some of your crypto gains with me.
 
 BTC: 18vFPf3mKBEk8m2xvR21Vw3B8GNUrmYsoe  
 ETH: 0x5E9c5fC0Ba54e7fe7da675AF73fF65A047aB3309  
