@@ -15,6 +15,10 @@ face in the photo
 
 Running the script creates three files in your directory. One for the faceset. One for the scanned mp4s. One for the small faces.
 
+The batch processing of the faceset can be stopped or started anytime without a problem, aside from maybe it creating
+duplicates if it stops in the middle of a video. Just go in your faceset folder and remove photos from the half processed
+video when you start it again.
+
 The script can read videos other than mp4s. Just do a find and replace in the script to your extension, like mp4 to mkv.  
 Best to use mp4s ripped from YouTube. Use a third party YouTube video downloader sites or apps to grab dozen(s) of 1080p
 videos starring the target face.
