@@ -41,3 +41,11 @@ face_recognition requires a package called dlib. If you have a GPU you must inst
     cd ..
 
     python3 setup.py install --yes USE_AVX_INSTRUCTIONS --no DLIB_USE_CUDA
+
+
+
+# Donations Accepted and Appreciated
+BTC: 18vFPf3mKBEk8m2xvR21Vw3B8GNUrmYsoe
+ETC: 0x5E9c5fC0Ba54e7fe7da675AF73fF65A047aB3309
+LTC: LS2QoBuAQm6PXrKJgjYeVijK4c8pj1CXjS
+Monero: 44GW7eCnwcMbgaEaqwtzt5WgWiVH3U6p5FtK1Rg8b65fj6A5AHqeyF6ad9a2owQGPCZFStskLsmbcULiYUBcCAAUKX177FF
