@@ -65,8 +65,8 @@ try:
 except IndexError:
 	print("No face found in target image.")
 	raise SystemExit(0)
-
-for zz in range(200):
+vid = True
+while(vid):
 	try:
 		vid = random.choice(glob.glob(vid_dir + '*.mp4'))
 		print("Now looking at video: " + vid)
