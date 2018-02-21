@@ -66,7 +66,7 @@ except IndexError:
 	print("No face found in target image.")
 	raise SystemExit(0)
 
-for i in range(200):
+for zz in range(200):
 	try:
 		vid = random.choice(glob.glob(vid_dir + '*.mp4'))
 		print("Now looking at video: " + vid)
@@ -136,13 +136,13 @@ for i in range(200):
 						if (cheight < 256) or (cwidth < 256):
 							croppedframe = cv2.resize(croppedframe, outputsize, interpolation=cv2.INTER_CUBIC)
 						print('Writing image ' + str(written) + '.')
-						cv2.imwrite(("vid_" + str(i) + random_string(15) + ".jpg"), croppedframe, [int(cv2.IMWRITE_JPEG_QUALITY), 98])
+						cv2.imwrite(("vid_" + str(zz) + random_string(15) + ".jpg"), croppedframe, [int(cv2.IMWRITE_JPEG_QUALITY), 98])
 						written += 1
 			if percentage > 99.9:
-				os.rename(vid, scanned_vids + '/vid' + str(i) + '_' + random_string(5) + '.mp4')
+				os.rename(vid, scanned_vids + '/vid' + str(zz) + '_' + random_string(5) + '.mp4')
 				break
 			if written > faces_from_each_video:
-				os.rename(vid, scanned_vids + '/vid' + str(i) + '_' + random_string(5) + '.mp4')
+				os.rename(vid, scanned_vids + '/vid' + str(zz) + '_' + random_string(5) + '.mp4')
 				break
 		input_video.release()
 	except ValueError:
@@ -153,18 +153,18 @@ for i in range(200):
 #Removes images under 32KB
 counter = 0
 low_quat = min_KB * 1000
-for i in (os.listdir(os.getcwd())):
-	if(os.path.getsize(i)) < low_quat:
-		os.rename(i, too_small + "/too small-" + str(counter) + random_string(15) + ".jpg")
-		print ("Moving " + str(i) + " to the too small folder")
+for xx in (os.listdir(os.getcwd())):
+	if(os.path.getsize(xx)) < low_quat:
+		os.rename(xx, too_small + "/too small-" + str(counter) + random_string(15) + ".jpg")
+		print ("Moving " + str(xx) + " to the too small folder")
 		counter += 1
 
 
 #Remove images with more than one face
 print ("Now double checking there is only one face in each photo")
-for i in (os.listdir(os.getcwd())):
+for yy in (os.listdir(os.getcwd())):
 	# Load the jpg file into a numpy array
-	image = face_recognition.load_image_file(i)
+	image = face_recognition.load_image_file(yy)
 
 	# Find all the faces in the image using a pre-trained convolutional neural network.
 	# This method is more accurate than the default HOG model, but it's slower
@@ -176,5 +176,5 @@ for i in (os.listdir(os.getcwd())):
 	print("I found {} face(s) in this photograph.".format(len(face_locations)))
 
 	if not (len(face_locations)) == 1:
-		os.remove(i)
-		print (str(i) + ' was removed')
+		os.remove(yy)
+		print (str(yy) + ' was removed')
