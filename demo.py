@@ -66,8 +66,8 @@ except IndexError:
 	print("No face found in target image.")
 	raise SystemExit(0)
 	
-	def random_string(length):
-		return ''.join(random.choice(string.ascii_letters) for m in range(length))
+def random_string(length):
+	return ''.join(random.choice(string.ascii_letters) for m in range(length))
 
 	
 vid = True
