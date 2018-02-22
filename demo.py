@@ -65,6 +65,11 @@ try:
 except IndexError:
 	print("No face found in target image.")
 	raise SystemExit(0)
+	
+	def random_string(length):
+		return ''.join(random.choice(string.ascii_letters) for m in range(length))
+
+	
 vid = True
 while(vid):
 	try:
@@ -87,9 +92,6 @@ while(vid):
 		known_faces = [
 			target_encoding
 		]
-
-		def random_string(length):
-			return ''.join(random.choice(string.ascii_letters) for m in range(length))
 
 		#switch to output directory
 		os.chdir(str(os.path.splitext(targfname)[0]) + "_output")
