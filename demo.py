@@ -70,8 +70,7 @@ def random_string(length):
 	return ''.join(random.choice(string.ascii_letters) for m in range(length))
 
 	
-vid = True
-while(vid):
+for zz in range(200):
 	try:
 		vid = random.choice(glob.glob(vid_dir + '*.mp4'))
 		print("Now looking at video: " + vid)
