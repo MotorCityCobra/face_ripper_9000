@@ -137,7 +137,7 @@ for zz in range(200):
 						if (cheight < 256) or (cwidth < 256):
 							croppedframe = cv2.resize(croppedframe, outputsize, interpolation=cv2.INTER_CUBIC)
 						print('Writing image ' + str(written) + '.')
-						cv2.imwrite(("vid_" + str(zz) + '-' + str(written) + random_string(15) + ".jpg"), croppedframe, [int(cv2.IMWRITE_JPEG_QUALITY), 98])
+						cv2.imwrite(("vid_" + str(zz) + '-' + str(written) + '_' + random_string(15) + ".jpg"), croppedframe, [int(cv2.IMWRITE_JPEG_QUALITY), 98])
 						written += 1
 			if percentage > 99.9:
 				os.rename(vid, scanned_vids + '/vid' + str(zz) + '_' + random_string(5) + '.mp4')
