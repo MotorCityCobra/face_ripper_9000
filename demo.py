@@ -72,7 +72,7 @@ def random_string(length):
 	
 for zz in range(200):
 	try:
-		vid = random.choice(glob.glob(vid_dir + '*.mp4'))
+		vid = random.choice(glob.glob(vid_dir + '/*.mp4'))
 		print("Now looking at video: " + vid)
 		input_video = cv2.VideoCapture(vid)
 
