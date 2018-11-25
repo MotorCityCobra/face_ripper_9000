@@ -46,4 +46,4 @@ face_recognition requires a package called dlib. If you have a GPU you must inst
 
 Also included is a dulpicate image finder you might find usefull on batches of Google image downloads or videos
 with overlapping footage of your desired face. Maybe useful for ensuring you made a clean dataset.
-Be mindful it might think high frame rate ripped stills are duplicates when you want those subtle changes, so it needs your supervision.
+Be mindful it might think high frame rate ripped stills are duplicates when you want keep those subtley different frames, so it needs your supervision.
