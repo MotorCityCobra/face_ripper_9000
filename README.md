@@ -46,4 +46,16 @@ face_recognition requires a package called dlib. If you have a GPU you must inst
 
 Also included is a dulpicate image finder you might find usefull on batches of Google image downloads or videos
 with overlapping footage of your desired face. Maybe useful for ensuring you made a clean dataset.
-Be mindful it might think high frame rate ripped stills are duplicates when you want keep those subtley different frames, so it needs your supervision.
+Be mindful it might think high frame rate ripped stills are duplicates when you want keep those
+subtly different frames, so it needs your supervision.  
+
+# Where is the alignments file?
+
+This doesn't make the alignments file. This is for building and adding on to your faceset. The program that makes
+the alignment file, rotates, and crops the images will find faces but this will find YOUR desired face and this
+will speed up the process.
+
+# How big of a faceset do I need?
+
+5000 is a good number if you have various facial expressions in various lighting.  
+You can do 50,000 or 100,000 and beyond.
