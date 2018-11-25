@@ -44,7 +44,6 @@ face_recognition requires a package called dlib. If you have a GPU you must inst
 
 
 
-# Donations Accepted and Appreciated
-If you'd like me to make more tools for you in the future then share some of your crypto gains with me.
-
-BTC: 18vFPf3mKBEk8m2xvR21Vw3B8GNUrmYsoe  
+Also included is a dulpicate image finder you might find usefull on batches of Google image downloads or videos
+with overlapping footage of your desired face. Maybe useful for ensuring you made a clean dataset.
+Be mindful it might think high frame rate ripped stills are duplicates when you want those subtle changes, so it needs your supervision.
